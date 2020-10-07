@@ -3,7 +3,7 @@
 namespace Holabs\TOTP\Bridges\Nette;
 
 use Holabs\TOTP;
-use Nette\DI\Extensions\ExtensionsExtension;
+use Nette\DI\CompilerExtension;
 use RobThree\Auth\TwoFactorAuth;
 
 /**
@@ -11,7 +11,7 @@ use RobThree\Auth\TwoFactorAuth;
  * @package      holabs/totp
  * @copyright    Copyright © 2017, Tomáš Holan [www.tomasholan.eu]
  */
-class TOTPExtension extends ExtensionsExtension {
+class TOTPExtension extends CompilerExtension {
 
 	public $defaults = [
 		'issuer'      => NULL,
